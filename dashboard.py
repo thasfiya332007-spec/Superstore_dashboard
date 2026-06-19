@@ -9,10 +9,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv(
-        r'C:\Users\thasf\OneDrive\Documents\OJT\OJT Sem 2\Superstore\output\superstore_clean.csv',
-        parse_dates=['Order Date', 'Ship Date']
-    )
+    df = pd.read_csv('..\data\superstore_clean.csv', parse_dates=['Order Date', 'Ship Date'])
     return df
 
 df = load_data()
