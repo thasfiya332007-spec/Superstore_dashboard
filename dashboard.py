@@ -9,8 +9,10 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('..\data\superstore_clean.csv', parse_dates=['Order Date', 'Ship Date'])
+    df = pd.read_csv("data/superstore_clean.csv", parse_dates=['Order Date', 'Ship Date'])
     return df
+
+#reference
 
 df = load_data()
 
